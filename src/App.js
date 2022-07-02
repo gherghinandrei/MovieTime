@@ -10,6 +10,7 @@ const onCardLeftScreen = (myIdentifier) => {
   console.log(myIdentifier + ' left the screen')
 }
 
+
 // const response = await fetch("https://api.themoviedb.org/3/trending/all/day?api_key=360a9b5e0dea438bac3f653b0e73af47&language=en-US");
 // const jsonData = await response.json();
 
