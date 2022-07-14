@@ -1,10 +1,6 @@
 import * as React from "react";
 import TinderCard from "react-tinder-card";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
+import {Typography, CardMedia, CardContent, CardActions, Card, Button, IconButton,Snackbar} from "@mui/material/";
 const onSwipe = (direction) => {
   alert("You swiped: " + direction);
 };
@@ -15,6 +11,22 @@ const onCardLeftScreen = (myIdentifier) => {
 
 export default function MovieCard() {
   const [value, setValue] = React.useState();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+    
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+
   return (
     <TinderCard
       onSwipe={onSwipe}
@@ -53,5 +65,6 @@ export default function MovieCard() {
         </CardActions>
       </Card>
     </TinderCard>
+    
   );
 }

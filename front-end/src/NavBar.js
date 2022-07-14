@@ -6,6 +6,7 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import JoinRightIcon from "@mui/icons-material/JoinRight";
 import FaceIcon from "@mui/icons-material/Face";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
+
 export default function NavBar() {
   const [value, setValue] = React.useState(0);
 

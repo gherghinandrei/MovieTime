@@ -13,7 +13,7 @@ export default function App2() {
       <CssBaseline />
       <Stack>
         {/* <MovieCard /> */}
-        <Friends/>
+        <Friends sx={{p:1}}/>
         <Paper
           sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
           elevation={3}
